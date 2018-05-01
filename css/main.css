@@ -335,11 +335,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.15em;
   color: #606060;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif; }
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400; }
 
 .welcome {
   background-image: url(../img/header-bg.png);
@@ -357,11 +358,12 @@ h2 {
     text-align: center; }
     .welcome h1 span {
       font-size: 5.5rem;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.15em;
       color: #03afc2;
       text-transform: uppercase;
       line-height: 1;
       font-family: "Six Caps", sans-serif;
+      font-weight: 400;
       display: block; }
     .welcome h1::before, .welcome h1::after {
       content: '';
@@ -373,3 +375,27 @@ h2 {
       margin: 0 auto 2em; }
     .welcome h1::after {
       margin: 2em auto 0; }
+
+.intro {
+  display: flex;
+  color: rgba(255, 255, 255, 0.7); }
+  .intro h2 {
+    color: #FFFFFF; }
+  @supports (display: grid) {
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr); } }
+
+.intro-middle {
+  background: #223843;
+  padding: 2.5em 5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.intro-left img,
+.intro-right img {
+  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%; }

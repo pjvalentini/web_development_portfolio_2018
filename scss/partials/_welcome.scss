@@ -1,3 +1,5 @@
+// Nesting inside of the welcome class
+
 .welcome {
   background-image: url(../img/header-bg.png);
   background-size: cover;
@@ -19,6 +21,7 @@
       display: block;
     }
 // top an bottom bars set up
+
     &::before,
     &::after {
       content: '';
