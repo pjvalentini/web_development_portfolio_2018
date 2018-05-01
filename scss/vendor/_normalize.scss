@@ -37,6 +37,27 @@ h1 {
 /* Grouping content
    ========================================================================== */
 
+/*
+Adds the correct display in IE 9
+  1. Add the correct display in IE.
+*/
+
+figcaption,
+figure,
+main { /* 1. */
+  display: block;
+}
+
+/*
+Adds the correct margin in IE 9
+*/
+
+figure {
+  margin: 0;
+}
+
+
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
