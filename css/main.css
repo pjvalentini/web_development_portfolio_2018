@@ -381,6 +381,13 @@ h2 {
   color: rgba(255, 255, 255, 0.7); }
   .intro h2 {
     color: #FFFFFF; }
+    .intro h2::after {
+      content: "";
+      height: 1px;
+      width: 20%;
+      background: rgba(255, 255, 255, 0.5);
+      display: block;
+      margin: 1em auto 0; }
   @supports (display: grid) {
     .intro {
       display: grid;
