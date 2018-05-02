@@ -1,10 +1,31 @@
 // this @extend is allowing me to bring in a container setup from the _placholders.scss
 // with out having to add anymore html markup...and is reusable.
 
+// these are some fallbacks just in case
 .about-me {
   @extend %container;
+  @extend %clearfix; // will protect the page layout in case text is shorter or longer
+  margin-top: 3em;
 }
 
+.about-img {
+  max-height: 25em;
+
+  @media (min-width: 42em) {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+.about-title {
+  margin-bottom: .25em;
+}
+
+.about-subtitle {
+  margin: .5em 0;
+}
+
+// these items are dependent on the grid, properties that are not dependent can go the the top
 @supports (display: grid) {
   .about-me {
     display: grid;
@@ -24,11 +45,12 @@
     grid-column: name-start / portfolio-end;
     grid-row: 1 / 2; // * this brings the name on top the img
     align-self: end; // places the name lower over the img.
-    margin-bottom: .25em;
   }
 
   .about-subtitle,
   .about-text {
     grid-column: portfolio-start / portfolio-end;
   }
+
+
 }
