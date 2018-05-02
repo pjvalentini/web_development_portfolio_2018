@@ -418,4 +418,13 @@ h2 {
     display: grid;
     grid-template-columns: [portfolio-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portfolio-end]; }
   .about-img {
-    grid-column: portfolio-start / img-end; } }
+    grid-column: portfolio-start / img-end;
+    grid-row: 1 / 2; }
+  .about-title {
+    grid-column: name-start / portfolio-end;
+    grid-row: 1 / 2;
+    align-self: end;
+    margin-bottom: .25em; }
+  .about-subtitle,
+  .about-text {
+    grid-column: portfolio-start / portfolio-end; } }

@@ -11,7 +11,24 @@
     // here im adding line names instead of numbers as they are easier to read.
     grid-template-columns: [ portfolio-start ] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portfolio-end];
   }
+
+// * here we want the name to overlap the img...so we need to force the name into the top row
+// if we do not add grid-row property then the name will go under the img and not able to fit
+// inside the center column.
   .about-img {
     grid-column: portfolio-start / img-end;
+    grid-row: 1 / 2; // * this brings the name overlapped over the img
+  }
+
+  .about-title {
+    grid-column: name-start / portfolio-end;
+    grid-row: 1 / 2; // * this brings the name on top the img
+    align-self: end; // places the name lower over the img.
+    margin-bottom: .25em;
+  }
+
+  .about-subtitle,
+  .about-text {
+    grid-column: portfolio-start / portfolio-end;
   }
 }
