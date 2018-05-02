@@ -1,13 +1,13 @@
-%container {
-  width: 90%;
+@mixin container($width: 90%, $max-width: 50em) {
+  width: $width;
   margin: 0 auto;
-  max-width: 50em; // about 900px
+  max-width: $max-width; // about 900px
 }
 
 // this clear fix will make so that if text in about-me page is shorter or longer
 // it will not break the page
 
-%clearfix {
+@mixin clearfix {
   &::after {
     content: '';
     display: block;

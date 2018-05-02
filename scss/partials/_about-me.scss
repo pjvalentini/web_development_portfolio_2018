@@ -3,8 +3,8 @@
 
 // these are some fallbacks just in case
 .about-me {
-  @extend %container;
-  @extend %clearfix; // will protect the page layout in case text is shorter or longer
+  @include container;
+  @include clearfix; // provides a float fallback for the page layout in case text is shorter or longer
   margin-top: 3em;
 }
 
