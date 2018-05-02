@@ -1,0 +1,17 @@
+// this @extend is allowing me to bring in a container setup from the _placholders.scss
+// with out having to add anymore html markup...and is reusable.
+
+.about-me {
+  @extend %container;
+}
+
+@supports (display: grid) {
+  .about-me {
+    display: grid;
+    // here im adding line names instead of numbers as they are easier to read.
+    grid-template-columns: [ portfolio-start ] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portfolio-end];
+  }
+  .about-img {
+    grid-column: portfolio-start / img-end;
+  }
+}
