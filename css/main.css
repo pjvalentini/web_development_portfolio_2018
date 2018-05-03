@@ -460,7 +460,7 @@ h2 {
   .portfolio-item figcaption {
     position: absolute;
     background: rgba(3, 175, 194, 0.75);
-    top: 0;
+    top: 100%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -468,7 +468,11 @@ h2 {
     color: #FFFFFF;
     text-align: left;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    transition: top ease-in-out 250ms; }
+  .portfolio-item:hover figcaption,
+  .portfolio-item:focus figcaption {
+    top: 0; }
 
 .portfolio-title {
   color: #FFFFFF;
@@ -485,6 +489,6 @@ h2 {
   .portfolio-link::after {
     content: url(../img/arrow-white.svg);
     display: inline-block;
-    height: 1em;
-    width: 1em;
+    height: .8em;
+    width: .8em;
     margin-left: .5em; }

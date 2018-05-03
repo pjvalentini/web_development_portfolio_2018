@@ -15,7 +15,7 @@
    figcaption {
     position: absolute;
     background: rgba($accent-color, .75); // rgba($variable, opacity);
-    top: 0;
+    top: 100%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -24,7 +24,13 @@
     text-align: left;
     display: flex;
     flex-direction: column; // stacks the text in a column
+    transition: top ease-in-out 250ms; // this creates a nice bottom to top wipe style transition.
  }
+
+  &:hover figcaption,
+  &:focus figcaption {
+    top: 0;
+  }
 }
 
 .portfolio-title {
@@ -45,8 +51,8 @@
   &::after {
     content: url(../img/arrow-white.svg);
     display: inline-block;
-    height: 1em;
-    width: 1em;
+    height: .8em;
+    width: .8em;
     margin-left: .5em;
   }
 }
