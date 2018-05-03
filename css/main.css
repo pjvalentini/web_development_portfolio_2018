@@ -455,16 +455,36 @@ h2 {
 .portfolio-item {
   position: relative;
   overflow: hidden; }
+  .portfolio-item img {
+    display: block; }
+  .portfolio-item figcaption {
+    position: absolute;
+    background: rgba(3, 175, 194, 0.75);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    color: #FFFFFF;
+    text-align: left;
+    display: flex;
+    flex-direction: column; }
 
-.portfolio-item figcaption {
-  position: absolute;
-  background: rgba(3, 175, 194, 0.5);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.portfolio-title {
   color: #FFFFFF;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; }
+  font-size: 3.625rem;
+  margin-bottom: auto; }
+
+.portfolio-link {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 3px solid #FFFFFF;
+  align-self: flex-start; }
+  .portfolio-link::after {
+    content: url(../img/arrow.svg);
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-left: .5em; }

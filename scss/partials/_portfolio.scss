@@ -8,18 +8,45 @@
   position: relative;
   overflow: hidden;
 
+  img {
+    display: block; // this will remove the small space from top an bottom of imgs.
+  }
+
+   figcaption {
+    position: absolute;
+    background: rgba($accent-color, .75); // rgba($variable, opacity);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column; // stacks the text in a column
+ }
 }
 
-.portfolio-item figcaption {
-  position: absolute;
-  background: rgba($accent-color, .5);
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.portfolio-title {
   color: $white;
-  text-align: left;
-  display: flex;
-  flex-direction: column; // stacks the text in a column
-  justify-content: flex-end; // this moves the text to the bottom.
+  font-size: 3.625rem;
+  margin-bottom: auto;
+}
+
+
+.portfolio-link {
+  color: $white;
+  font-weight: $fw-b;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 3px solid $white;
+  align-self: flex-start;
+
+  &::after {
+    content: url(../img/arrow.svg);
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin-left: .5em;
+  }
 }
