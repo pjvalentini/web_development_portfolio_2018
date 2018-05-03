@@ -8,9 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "hoek": "^5.0.3"
+  },
   "devDependencies": {
-    "browser-sync": "^2.23.7",
+    "browser-sync": "^2.24.3",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
   }
