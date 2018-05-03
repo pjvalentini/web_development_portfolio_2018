@@ -452,11 +452,20 @@ h2 {
   background: #e8e9eb;
   padding: 5em 0; }
 
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75em; }
+
 .portfolio-item {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  flex: 1 1 20rem; }
   .portfolio-item img {
-    display: block; }
+    display: block;
+    width: 100%; }
   .portfolio-item figcaption {
     position: absolute;
     background: rgba(3, 175, 194, 0.75);
@@ -476,8 +485,11 @@ h2 {
 
 .portfolio-title {
   color: #FFFFFF;
-  font-size: 3.625rem;
+  font-size: 2.5rem;
   margin-bottom: auto; }
+
+.portfolio-description {
+  display: none; }
 
 .portfolio-link {
   color: #FFFFFF;
@@ -492,3 +504,16 @@ h2 {
     height: .8em;
     width: .8em;
     margin-left: .5em; }
+
+@supports (display: grid) {
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em; }
+  .portfolio-item.featured {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; }
+  .featured .portfolio-title {
+    font-size: 5rem; }
+  .featured .portfolio-description {
+    display: block; } }

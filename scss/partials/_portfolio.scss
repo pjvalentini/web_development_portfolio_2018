@@ -4,12 +4,20 @@
   padding: 5em 0;
 }
 
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  @include container($max-width: 75em);
+}
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  flex: 1 1 20rem;
 
   img {
     display: block; // this will remove the small space from top an bottom of imgs.
+    width: 100%;
   }
 
    figcaption {
@@ -35,10 +43,13 @@
 
 .portfolio-title {
   color: $white;
-  font-size: 3.625rem;
+  font-size: 2.5rem;
   margin-bottom: auto;
 }
 
+.portfolio-description {
+  display: none;
+}
 
 .portfolio-link {
   color: $white;
@@ -54,5 +65,28 @@
     height: .8em;
     width: .8em;
     margin-left: .5em;
+  }
+}
+
+@supports (display: grid) {
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-gap: 1em; // may add this later
+  }
+
+  .portfolio-item.featured { // this will allow me to send which ever "featured" project to the top.
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .featured {
+    .portfolio-title {
+      font-size: 5rem;
+  }
+
+  .portfolio-description {
+    display: block;
+    }
   }
 }
