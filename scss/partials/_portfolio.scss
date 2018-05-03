@@ -1,0 +1,25 @@
+.portfolio {
+  text-align: center;
+  background: $light-grey;
+  padding: 5em 0;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.portfolio-item figcaption {
+  position: absolute;
+  background: rgba($accent-color, .5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: $white;
+  text-align: left;
+  display: flex;
+  flex-direction: column; // stacks the text in a column
+  justify-content: flex-end; // this moves the text to the bottom.
+}

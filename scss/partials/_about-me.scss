@@ -5,7 +5,8 @@
 .about-me {
   @include container;
   @include clearfix; // provides a float fallback for the page layout in case text is shorter or longer
-  margin-top: 3em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .about-img {
