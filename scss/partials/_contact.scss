@@ -1,0 +1,32 @@
+.contact {
+  @include container;
+  padding: 5em 0;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: $dark-grey;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: .75em;
+  width: 100%;
+  background: lighten($light-grey, 7%);
+  border: 1px solid $light-grey;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: block;
+  width: 30%;
+  margin-top: 1em;
+  margin-left: auto;
+}

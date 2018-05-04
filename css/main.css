@@ -516,3 +516,32 @@ h2 {
     font-size: 5rem; }
   .featured .portfolio-description {
     display: block; } }
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 5em 0; }
+  .contact h1 {
+    text-align: center; }
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060; }
+
+input,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: .75em;
+  width: 100%;
+  background: #fbfbfc;
+  border: 1px solid #e8e9eb;
+  font-size: 1.2rem; }
+
+.button {
+  display: block;
+  width: 30%;
+  margin-top: 1em;
+  margin-left: auto; }
