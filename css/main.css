@@ -344,6 +344,9 @@ h2 {
   line-height: 1;
   font-family: "Six Caps", sans-serif;
   font-weight: 400; }
+  @media (min-width: 50em) {
+    h2 {
+      font-size: 3rem; } }
 
 .welcome {
   background-image: url(../img/header-bg.png);
@@ -359,6 +362,9 @@ h2 {
     color: #223843;
     line-height: 2;
     text-align: center; }
+    @media (min-width: 50em) {
+      .welcome h1 {
+        font-size: 3vw; } }
     .welcome h1 span {
       font-size: 5.5rem;
       letter-spacing: 0.15em;
@@ -370,7 +376,7 @@ h2 {
       display: block; }
       @media (min-width: 50em) {
         .welcome h1 span {
-          font-size: 10rem; } }
+          font-size: 10vw; } }
     .welcome h1::before, .welcome h1::after {
       content: '';
       display: block;
@@ -441,17 +447,29 @@ h2 {
 @supports (display: grid) {
   .about-me {
     display: grid;
-    grid-template-columns: [portfolio-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portfolio-end]; }
+    grid-template-columns: [portfolio-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portfolio-end];
+    grid-column-gap: .5em; }
   .about-img {
     grid-column: portfolio-start / img-end;
     grid-row: 1 / 2; }
+    @media (min-width: 50em) {
+      .about-img {
+        grid-row: 1 / 4; } }
   .about-title {
     grid-column: name-start / portfolio-end;
     grid-row: 1 / 2;
     align-self: end; }
   .about-subtitle,
   .about-text {
-    grid-column: portfolio-start / portfolio-end; } }
+    grid-column: portfolio-start / portfolio-end; }
+    @media (min-width: 50em) {
+      .about-subtitle,
+      .about-text {
+        grid-column: image-end / portfolio-end; } }
+  .about-subtitle {
+    grid-row: 2 / 3; }
+  .about-text {
+    grid-row: 3 / 4; } }
 
 .portfolio {
   text-align: center;

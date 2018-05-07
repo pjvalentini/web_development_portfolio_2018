@@ -11,6 +11,7 @@
 
 .about-img {
   max-height: 25em;
+  // border-radius: 50%;
 
   @media (min-width: 42em) {
     float: left;
@@ -32,6 +33,7 @@
     display: grid;
     // here im adding line names instead of numbers as they are easier to read.
     grid-template-columns: [ portfolio-start ] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [portfolio-end];
+    grid-column-gap: .5em;
   }
 
 // * here we want the name to overlap the img...so we need to force the name into the top row
@@ -40,6 +42,10 @@
   .about-img {
     grid-column: portfolio-start / img-end;
     grid-row: 1 / 2; // * this brings the name overlapped over the img
+
+    @include mq {
+      grid-row: 1 / 4;
+    }
   }
 
   .about-title {
@@ -51,7 +57,17 @@
   .about-subtitle,
   .about-text {
     grid-column: portfolio-start / portfolio-end;
+
+    @include mq {
+      grid-column: image-end / portfolio-end;
+    }
   }
 
+  .about-subtitle {
+    grid-row: 2 / 3;
+  }
 
+  .about-text {
+    grid-row: 3 / 4;
+  }
 }

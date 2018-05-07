@@ -5,7 +5,7 @@ body {
   background: $white;
   font-size: .875rem;
 
-  // 50em about 800px
+  // 50em is about 800px
   @include mq {
     font-size: 1.125rem;
   }
@@ -29,4 +29,8 @@ h1 {
 
 h2 {
   @include sans-serif($fs: 2rem);
+
+  @include mq {
+    font-size: 3rem;
+  }
 }
