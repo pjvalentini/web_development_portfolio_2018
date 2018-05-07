@@ -72,7 +72,10 @@
   .portfolio-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-gap: 1em; // may add this later
+    // grid-gap: .75em; // may add this later
+    @include mq {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   .portfolio-item.featured { // this will allow me to send which ever "featured" project to the top.
