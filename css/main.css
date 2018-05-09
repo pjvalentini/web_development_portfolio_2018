@@ -420,9 +420,6 @@ nav a {
   .nav-is-open .menu-button {
     transform: translateX(-70%); }
 
-.container-all {
-  transition: transform ease-in 250ms; }
-
 .welcome {
   background-image: url(../img/header-bg.png);
   background-size: cover;
