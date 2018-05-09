@@ -36,8 +36,13 @@ nav ul {
 }
 
 nav li {
-  border-bottom: 1px solid $navy-blue;
   text-align: center;
+
+  // this removes the last border bottom from the nav menu.
+  // so this is not showing the last border bottom now.
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $navy-blue;
+  }
 }
 
 nav li:hover {
@@ -62,6 +67,11 @@ nav a {
 // you can test it by adding and deleting the class...the nav with appear and disapear.
 // We want to be able to do this with JavaScript...so we will do that instead.
 .nav-is-open {
+  // if nav is nav-is-open
+  // set a fixed vh, so scrolling is disabled when nav-is-open.
+  height: 100vh;
+  overflow-y: hidden;
+
   nav {
     transform: translateX(0);
   }

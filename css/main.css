@@ -382,8 +382,9 @@ nav ul {
   background: #03afc2; }
 
 nav li {
-  border-bottom: 1px solid #223843;
   text-align: center; }
+  nav li:not(:last-of-type) {
+    border-bottom: 1px solid #223843; }
 
 nav li:hover {
   background: rgba(34, 56, 67, 0.5); }
@@ -405,20 +406,19 @@ nav a {
 .close-menu {
   display: none; }
 
-.nav-is-open nav {
-  transform: translateX(0); }
-
-.nav-is-open .container-all {
-  transform: translate(80%); }
-
-.nav-is-open .hamburger-menu {
-  display: none; }
-
-.nav-is-open .close-menu {
-  display: block; }
-
-.nav-is-open .menu-button {
-  transform: translateX(-70%); }
+.nav-is-open {
+  height: 100vh;
+  overflow-y: hidden; }
+  .nav-is-open nav {
+    transform: translateX(0); }
+  .nav-is-open .container-all {
+    transform: translate(80%); }
+  .nav-is-open .hamburger-menu {
+    display: none; }
+  .nav-is-open .close-menu {
+    display: block; }
+  .nav-is-open .menu-button {
+    transform: translateX(-70%); }
 
 .container-all {
   transition: transform ease-in 250ms; }
