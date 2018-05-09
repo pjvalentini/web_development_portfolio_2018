@@ -351,6 +351,22 @@ h2 {
     h2 {
       font-size: 3rem; } }
 
+.menu-button {
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  background: transparent;
+  border: 0; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around; }
+
 .welcome {
   background-image: url(../img/header-bg.png);
   background-size: cover;
@@ -358,7 +374,8 @@ h2 {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   .welcome h1 {
     font-size: 1.5rem;
     font-weight: 400;
