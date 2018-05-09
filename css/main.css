@@ -319,7 +319,8 @@ body {
   font-family: "Merriweather", serif;
   line-height: 1.6;
   background: #FFFFFF;
-  font-size: .875rem; }
+  font-size: .875rem;
+  overflow-x: hidden; }
   @media (min-width: 50em) {
     body {
       font-size: 1.125rem; } }
@@ -360,7 +361,7 @@ h2 {
   outline: none; }
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;

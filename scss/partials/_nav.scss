@@ -10,7 +10,8 @@
 
 // nav styling
 nav {
-  position: fixed; // keeps the pulldown menu in place.
+  // slide fix: changed from pos fixed to absolute.
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;

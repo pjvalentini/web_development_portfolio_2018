@@ -4,8 +4,10 @@ body {
   line-height: 1.6;
   background: $white;
   font-size: .875rem;
+  // bottom scroll bar fix: any thing left and right will disappear when overflowing.
+  // issue when menu was toggled out.
+  overflow-x: hidden;
 
-  // 50em is about 800px
   @include mq {
     font-size: 1.125rem;
   }
