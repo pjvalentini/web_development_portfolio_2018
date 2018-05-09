@@ -16,7 +16,7 @@ nav {
   right: 20%;
   z-index: 10; // overlaps the page
 
-  transform: translateX(-100%);
+  transform: translateX(-100%); // makes the nav pulldown disappear.
 }
 
 
@@ -49,5 +49,13 @@ nav a {
   padding: calc(100vh/8) 0; // this divides the nav into 8 parts
   line-height: 0; // this makes it so the text height is not factored into the calulation.
   width: 100%;
+}
 
+// This class is on the body in the index.html file.
+// you can test it by adding and deleting the class...the nav with appear and disapear.
+// We want to be able to do this with JavaScript...so we will do that instead.
+.nav-is-open {
+  nav {
+    transform: translateX(0);
+  }
 }

@@ -399,6 +399,9 @@ nav a {
   line-height: 0;
   width: 100%; }
 
+.nav-is-open nav {
+  transform: translateX(0); }
+
 .welcome {
   background-image: url(../img/header-bg.png);
   background-size: cover;
