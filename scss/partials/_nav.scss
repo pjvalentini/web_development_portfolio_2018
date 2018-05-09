@@ -13,8 +13,10 @@ nav {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 15%;
-  z-index: 10 // overlaps the page
+  right: 20%;
+  z-index: 10; // overlaps the page
+
+  transform: translateX(-100%);
 }
 
 
