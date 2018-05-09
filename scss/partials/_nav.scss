@@ -8,6 +8,16 @@
 }
 
 // nav styling
+nav {
+  position: fixed; // keeps the pulldown menu in place.
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 15%;
+  z-index: 10 // overlaps the page
+}
+
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -16,4 +26,23 @@ nav ul {
   flex-direction: column;
   height: 100vh;
   justify-content: space-around;
+  align-items: stretch;
+  background: $accent-color;
+}
+
+nav li {
+  border-bottom: 1px solid $navy-blue;
+  text-align: center;
+}
+
+nav li:hover {
+  background: rgba($navy-blue, .5); // allows me to stay within color range but adds opacity
+}
+
+nav a {
+  display: inline-block;
+  @include sans-serif($fs: 4rem, $color: $navy-blue)
+  text-decoration: none;
+  padding: calc(100vh/8) 3em; // this divides the nav into 8 parts
+  line-height: 0; // this makes it so the text height is not factored into the calulation.
 }
