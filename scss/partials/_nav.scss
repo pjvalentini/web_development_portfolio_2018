@@ -5,6 +5,7 @@
   left: 3em;
   background: transparent;
   border: 0;
+  outline: none; // removes the chrome input highlighting.
 }
 
 // nav styling
@@ -17,6 +18,7 @@ nav {
   z-index: 10; // overlaps the page
 
   transform: translateX(-100%); // makes the nav pulldown disappear.
+  transition: transform ease-in 250ms; // adds a slide effect over 250ms.
 }
 
 
@@ -51,6 +53,10 @@ nav a {
   width: 100%;
 }
 
+.close-menu {
+  display: none;
+}
+
 // This class is on the body in the index.html file.
 // you can test it by adding and deleting the class...the nav with appear and disapear.
 // We want to be able to do this with JavaScript...so we will do that instead.
@@ -58,4 +64,24 @@ nav a {
   nav {
     transform: translateX(0);
   }
+
+  .container-all {
+    transform: translate(80%);
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  .menu-button {
+    transform: translateX(-70%);
+  }
+}
+
+.container-all {
+  transition: transform ease-in 250ms;
 }
