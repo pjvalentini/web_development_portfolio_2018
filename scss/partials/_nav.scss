@@ -40,9 +40,12 @@ nav li:hover {
 }
 
 nav a {
+  // set up for making the each row clickable, not just the text...
   display: inline-block;
   @include sans-serif($fs: 4rem, $color: $navy-blue)
   text-decoration: none;
-  padding: calc(100vh/8) 3em; // this divides the nav into 8 parts
+  padding: calc(100vh/8) 0; // this divides the nav into 8 parts
   line-height: 0; // this makes it so the text height is not factored into the calulation.
+  width: 100%;
+
 }

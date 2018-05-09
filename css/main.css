@@ -394,8 +394,9 @@ nav a {
   font-family: "Six Caps", sans-serif;
   font-weight: 400;
   text-decoration: none;
-  padding: calc(100vh/8) 3em;
-  line-height: 0; }
+  padding: calc(100vh/8) 0;
+  line-height: 0;
+  width: 100%; }
 
 .welcome {
   background-image: url(../img/header-bg.png);
