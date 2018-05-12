@@ -15,7 +15,7 @@
   overflow: hidden;
   flex: 1 1 20rem;
 
-  img {
+  .portfolio-img {
     display: block; // this will remove the small space from top an bottom of imgs.
     width: 100%;
   }
@@ -102,13 +102,15 @@
   left: 2em;
   right: 2em;
   background: $white;
-  box-shadow:  0 0 0 3em rgba(#000, .5);
+  box-shadow:  0 0 0 3em rgba(black, .5);
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .portfolio-header {
   text-align: left;
   padding: 5em 0;
+  margin-bottom: 2em;
 }
 
 .portfolio-header:nth-of-type(1) {
@@ -122,18 +124,38 @@
   padding: 3em 0 3em 3em;
   color: $white;
   width: 70%;
+
+
+  .portfolio-title {
+    font-size: 3.5rem;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      margin: .5em 0;
+      background: $white;
+      width: 100%;
+    }
+  }
 }
 
-.portfolio-title {
-  font-size: 3.5rem;
-  display: inline-block;
+.portfolio-subtitle {
+  font-size: 1rem;
+}
 
-  &::after {
-    content: '';
-    display: block;
-    height: 1px;
-    margin: .5em 0;
-    background: $white;
-    width: 100%;
-  }
+.portfolio-content {
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.portfolio-full-width {
+  width: 100vw;
+  max-width: initial;
+  margin: 2em calc(50% - 50vw);
+  height: 20vh;
+  object-fit: cover;
 }
