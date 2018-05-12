@@ -93,3 +93,47 @@
     }
   }
 }
+
+.portfolio-modal {
+  position: fixed;
+  z-index: 10;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background: $white;
+  box-shadow:  0 0 0 3em rgba(#000, .5);
+  overflow-y: scroll;
+}
+
+.portfolio-header {
+  text-align: left;
+  padding: 5em 0;
+}
+
+.portfolio-header:nth-of-type(1) {
+  background-image:  url(../img/portfolio-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-title-box {
+  background: rgba($accent-color, .75);
+  padding: 3em 0 3em 3em;
+  color: $white;
+  width: 70%;
+}
+
+.portfolio-title {
+  font-size: 3.5rem;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin: .5em 0;
+    background: $white;
+    width: 100%;
+  }
+}
