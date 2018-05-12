@@ -1,3 +1,5 @@
+// Navigation Animation
+
 const navToggle = document.querySelector('.menu-button');
 const nav = document.querySelector('nav');
 const containerAll = document.querySelector('.container-all');
