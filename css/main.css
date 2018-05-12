@@ -629,6 +629,20 @@ nav a {
   overflow-y: scroll;
   overflow-x: hidden; }
 
+.modal-close {
+  background: #FFFFFF;
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  padding: 4px 0 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
 .portfolio-header {
   text-align: left;
   padding: 5em 0;
@@ -670,6 +684,16 @@ nav a {
   margin: 2em calc(50% - 50vw);
   height: 20vh;
   object-fit: cover; }
+
+@media (min-width: 50em) {
+  .portfolio-pull-left {
+    width: 65%;
+    float: left;
+    margin-right: 2em; }
+  .portfolio-pull-right {
+    width: 65%;
+    float: right;
+    margin-left: 2em; } }
 
 .contact {
   width: 90%;
