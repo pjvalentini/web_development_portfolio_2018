@@ -627,7 +627,8 @@ nav a {
   background: #FFFFFF;
   box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: none; }
 
 .modal-close {
   background: #FFFFFF;
