@@ -629,6 +629,8 @@ nav a {
   overflow-y: scroll;
   overflow-x: hidden;
   display: none; }
+  .portfolio-modal.is-open {
+    display: block; }
 
 .modal-close {
   background: #FFFFFF;
