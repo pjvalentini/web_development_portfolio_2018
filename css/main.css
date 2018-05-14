@@ -649,12 +649,24 @@ nav a {
 .portfolio-header {
   text-align: left;
   padding: 5em 0;
-  margin-bottom: 2em; }
-
-.portfolio-header:nth-of-type(1) {
-  background-image: url(../img/portfolio-01.jpg);
+  margin-bottom: 2em;
   background-size: cover;
   background-position: center; }
+
+.header-one {
+  background-image: url(../img/portfolio-01.jpg); }
+
+.header-two {
+  background-image: url(../img/portfolio-02.jpg); }
+
+.header-three {
+  background-image: url(../img/portfolio-03.jpg); }
+
+.header-four {
+  background-image: url(../img/portfolio-04.jpg); }
+
+.header-five {
+  background-image: url(../img/portfolio-05.jpg); }
 
 .portfolio-title-box {
   background: rgba(3, 175, 194, 0.75);
@@ -697,6 +709,18 @@ nav a {
     width: 65%;
     float: right;
     margin-left: 2em; } }
+
+@keyframes modalIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modalOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .contact {
   width: 90%;
