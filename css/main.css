@@ -333,7 +333,7 @@ h1, h2, p {
   margin-bottom: 1em; }
 
 h1 {
-  color: #03afc2;
+  color: orange;
   line-height: 1;
   font-size: 3.125rem; }
   @media (min-width: 50em) {
@@ -379,7 +379,7 @@ nav ul {
   height: 100vh;
   justify-content: space-around;
   align-items: stretch;
-  background: #03afc2; }
+  background: orange; }
 
 nav li {
   text-align: center; }
@@ -441,7 +441,7 @@ nav a {
     .welcome h1 span {
       font-size: 5.5rem;
       letter-spacing: 0.15em;
-      color: #03afc2;
+      color: orange;
       text-transform: uppercase;
       line-height: 1;
       font-family: "Six Caps", sans-serif;
@@ -565,7 +565,7 @@ nav a {
     width: 100%; }
   .portfolio-item figcaption {
     position: absolute;
-    background: rgba(3, 175, 194, 0.75);
+    background: rgba(255, 165, 0, 0.75);
     top: 100%;
     bottom: 0;
     right: 0;
@@ -669,7 +669,7 @@ nav a {
   background-image: url(../img/portfolio-05.jpg); }
 
 .portfolio-title-box {
-  background: rgba(3, 175, 194, 0.75);
+  background: rgba(255, 165, 0, 0.75);
   padding: 3em 0 3em 3em;
   color: #FFFFFF;
   width: 70%; }
@@ -773,7 +773,7 @@ textarea {
   margin-top: 1em;
   margin-left: auto;
   min-width: auto;
-  background: #03afc2;
+  background: orange;
   border: none;
   font-size: 2.5rem;
   letter-spacing: 0.15em;
