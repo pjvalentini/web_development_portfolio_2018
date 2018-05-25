@@ -1,19 +1,22 @@
 footer {
   background: $navy-blue;
-  padding: 5em 0;
+  padding: 2em 0;
   text-align: center;
 }
 
-.social-icons {
+a.social-icons  {
   @include container($max-width: 15em)
-  display: flex;
+
+  display: inline-flex;
   justify-content: space-between;
   margin: 1.75em auto 4em;
 }
 
+
 .social-icon {
-  width: 25%;
-  height: 25%;
+  padding-top: 2em;
+  width: 10%;
+  height: 10%;
 }
 
 .copyright {
@@ -22,7 +25,7 @@ footer {
     display: block;
     height: 1px;
     background: rgba($white, .15);
-    margin: 4em auto;
+    margin: 2em auto;
     width: 25%;
   }
 }
