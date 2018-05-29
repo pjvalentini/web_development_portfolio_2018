@@ -650,8 +650,7 @@ nav a {
   text-align: left;
   padding: 5em 0;
   margin-bottom: 2em;
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
 
 .header-one {
   background-image: url(../img/slave.png); }
@@ -660,7 +659,7 @@ nav a {
   background-image: url(../img/omdbmodal2.png); }
 
 .header-three {
-  background-image: url(../img/portfolio-03.jpg); }
+  background-image: url(../img/quotestersquare.png); }
 
 .header-four {
   background-image: url(../img/portfolio-04.jpg); }
