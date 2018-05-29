@@ -6,7 +6,7 @@ portfolioContainer.addEventListener('click', (e) => {
   e.preventDefault();
   // This will target on the specific tag you click on, portfolio-link in this case.
   const modalToggle = e.target.closest('.portfolio-link');
-  // console.log(modalToggle);
+  console.log(modalToggle);
 
   if(!modalToggle) return
   // parentNode is the figcaption, nextElementSibling is the div class portfolio-modal.

@@ -11,7 +11,7 @@ const bodyCLassList = document.body.classList;
 
 
 navToggle.addEventListener('click', () => {
-  // console.log("im clicked");
+  // console.log("ham menu or x clicked");
   containerAllStyle.transition = 'transform 250ms ease-in-out';
   // adding a class using classList.add...no "." required.
   // as the "." will end up in the html as well.
@@ -20,7 +20,7 @@ navToggle.addEventListener('click', () => {
 });
 
 nav.addEventListener('click', () => {
-  // console.log("click");
+  // console.log("nav item clicked");
   containerAllStyle.transition = '0ms';
   bodyCLassList.remove('nav-is-open');
 });

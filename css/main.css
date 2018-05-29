@@ -666,7 +666,7 @@ nav a {
   background-image: url(../img/portfolio-04.jpg); }
 
 .header-five {
-  background-image: url(../img/portfolio-05.jpg); }
+  background-image: url(../img/acuwaresquare.png); }
 
 .portfolio-title-box {
   background: rgba(255, 165, 0, 0.75);
@@ -697,7 +697,6 @@ nav a {
   width: 100vw;
   max-width: initial;
   margin: 2em calc(50% - 50vw);
-  height: 20vh;
   object-fit: cover; }
 
 @media (min-width: 50em) {
