@@ -7,7 +7,7 @@ portfolioContainer.addEventListener('click', (e) => {
   const modalToggle = e.target.closest('.portfolio-link');
   console.log(modalToggle);
 
-  if(!modalToggle) return
+  if(!modalToggle) return;
   // parentNode is the figcaption, nextElementSibling is the div class portfolio-modal.
   const modal = modalToggle.parentNode.nextElementSibling;
   // console.log(modal);
